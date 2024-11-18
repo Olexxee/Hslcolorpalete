@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>code Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>Color Picker</h1>
+            <div id="colorDisplay">
+            </div>
+            <div class="show"></div>
+            <div class="controls">
+
+                <div class="control">
+                    <label for="hue">Hue:</label>
+                    <div class="slider-container">
+                        <input type="range" id="hue" min="0" max="360" value="100">
+                        <span id="hueValue">100</span>
+                    </div>
+                </div>
+                <div class="control">
+                    <label for="saturation">Saturation:</label>
+                    <div class="slider-container">
+                        <input type="range" id="saturation" min="0" max="100" value="50">
+                        <span id="saturationValue">50</span>
+                    </div>
+                </div>
+
+                <div class="control">
+                    <label for="lightness">lightness</label>
+                    <div class="slider-container">
+                        <input type="range" id="lightness" min="0" max="100" value="50">
+                        <span id="lightnessValue">50</span>
+                    </div>
+                </div>
+                <button id="copyButton">Copy Color</button>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
